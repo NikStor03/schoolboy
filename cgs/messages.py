@@ -32,7 +32,7 @@ class messages(commands.Cog):
 			for guild_member in guild.members:
 				if guild_member.nick == nick:
 					emb = discord.Embed(title="Помилка :exclamation:",
-						description="Я бачу у гільдії вже є така людина\nСпробуйте знову",
+						description="Я бачу у гільдії вже є така людина з цим iменем\nСпробуйте знову",
 						color=0x1400ff)
 					emb.set_footer(text="Цей бот є зараз на бета тестуванні, якщо помітите будь-якої неполадки, напишіть про це творцю NikStor")
 					await member.send(embed=emb)
@@ -40,8 +40,8 @@ class messages(commands.Cog):
 			await member.edit(nick=nick)
 			emb = discord.Embed(title="Кiнець",
 				description="Вiтаю, ти завершив регестрацiю:yum:\n"
-				"Тепер ти можеш пiти й прочитати правила у чатi #правила-учнiв\n\n"
-				"||Якщо ти зробив помилку в написаннi свого iменi\nНапиши знову `ПІБ [призвище] [ім'я]`||",
+				"Тепер Ви можеш пiти й прочитати правила у чатi #правила\n\n"
+				"||Якщо Ви зробив помилку в написаннi свого iменi\nНапиши знову `ПІБ [призвище] [ім'я]`||",
 				color=0x1400ff)
 			emb.set_footer(text="Цей бот є зараз на бета тестуванні, якщо помітите будь-якої неполадки, напишіть про це творцю NikStor")
 			await member.send(embed=emb)
